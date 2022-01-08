@@ -1,0 +1,7 @@
+# action.yml
+name: 'Hello World'
+description: 'Hellow world from github actions'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
