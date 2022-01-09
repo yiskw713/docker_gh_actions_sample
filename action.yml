@@ -1,7 +1,11 @@
 # action.yml
 name: 'Hello World'
-description: 'Hellow world from github actions'
+description: 'Hello world from github actions'
+inputs:
+  REPOSITORY: 
+    description: github repository name
+    required: true
+    default: ${{ github.repositroy }}
 runs:
   using: 'docker'
   image: 'Dockerfile'
-
