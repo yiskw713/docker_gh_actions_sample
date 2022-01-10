@@ -2,7 +2,7 @@ import os
 
 
 def main() -> None:
-    repository = os.getenv("REPOSITORY")
+    repository = os.getenv("INPUT_REPOSITORY")
     print(f"Hello world from github actions in {repository}!")
 
 
