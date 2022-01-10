@@ -9,5 +9,5 @@ jobs:
 
       - name: Run github action using docker
         uses: ./
-        with:
-          REPOSITORY: ${{ env.GITHUB_REPOSITORY	}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

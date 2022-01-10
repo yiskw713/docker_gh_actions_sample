@@ -5,6 +5,8 @@ inputs:
   REPOSITORY: 
     description: github repository name
     required: true
+    default: ${{ github.repository }}
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
