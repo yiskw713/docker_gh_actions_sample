@@ -1,5 +1,4 @@
-on:
-  workflow_dispatch
+on: [push, workflow_dispatch]
 
 jobs:
   github_actions_sample:
@@ -9,5 +8,5 @@ jobs:
 
       - name: Run github action using docker
         uses: ./
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          REPOSITORY: ${{ github.repository }}
